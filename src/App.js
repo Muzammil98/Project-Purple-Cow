@@ -55,7 +55,7 @@ function App() {
         </h1>
        
         <button onClick={() => hitCounter()} className="App-link">
-          Hit me !
+          Hit !
         </button>
       </header>
     </div>
