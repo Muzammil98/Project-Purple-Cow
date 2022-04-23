@@ -10,8 +10,8 @@ import Counter from "./components/Counter";
 import logo from "./logo.svg";
 import "./App.css";
 
-const NAMESPACE = "codeventure";
-const KEY = "1ccb732e-b55a-4404-ad3f-0f99c02fe44e";
+const NAMESPACE = process.env.REACT_APP_NAMESPACE;
+const KEY = process.env.REACT_APP_KEY;
 
 function App() {
   const [currentCount, setcurrentCount] = useState(0);

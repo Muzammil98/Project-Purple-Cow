@@ -5,8 +5,8 @@ import countapi from "countapi-js";
 // * Assets
 import "../App.css";
 
-const NAMESPACE = "codeventure";
-const KEY = "1ccb732e-b55a-4404-ad3f-0f99c02fe44e";
+const NAMESPACE = process.env.REACT_APP_NAMESPACE;
+const KEY = process.env.REACT_APP_KEY;
 
 const Button = ({ setcurrentCount, setPreviousCount, currentCount }) => {
   const hitCounter = async () => {

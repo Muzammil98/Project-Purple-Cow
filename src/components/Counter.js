@@ -23,7 +23,7 @@ const Counter = ({ currentCount, previousCount }) => {
 
   return (
     <h1>
-      Count :
+      Count {" "}
       <code>
         <CountAnimated />
       </code>
