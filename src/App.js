@@ -1,6 +1,7 @@
 // * Libraries
 import { useEffect, useState } from "react";
 import countapi from "countapi-js";
+import CountUp from "react-countup";
 
 // * Assets
 import logo from "./assets/code-venture-icon.svg";
@@ -30,13 +31,29 @@ function App() {
     });
   };
 
+  const CountAnimated = () => {
+    return (
+      <CountUp
+        end={currentCount}
+        duration={1}
+        separator=","
+        decimal=","
+        delay={0}
+      >
+        {({ countUpRef }) => <span ref={countUpRef} />}
+      </CountUp>
+    );
+  };
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Count : <code>{currentCount}</code>
-        </p>
+
+        <h1>
+          Count : <code> <CountAnimated /></code>
+        </h1>
+       
         <button onClick={() => hitCounter()} className="App-link">
           Hit me !
         </button>
