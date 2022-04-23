@@ -7,7 +7,7 @@ import Button from "./components/Button";
 import Counter from "./components/Counter";
 
 // * Assets
-import logo from "./assets/code-venture-icon.svg";
+import logo from "./logo.svg";
 import "./App.css";
 
 const NAMESPACE = "codeventure";
