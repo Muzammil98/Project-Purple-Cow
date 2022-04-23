@@ -38,7 +38,7 @@ function App() {
           Count : <code>{currentCount}</code>
         </p>
         <button onClick={() => hitCounter()} className="App-link">
-          Learn React
+          Hit me !
         </button>
       </header>
     </div>
